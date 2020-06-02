@@ -154,7 +154,7 @@ plt.imshow(wc)
 
 # ## 3 Sentimental Analysis
 # ### 3.1 SentScore 
-# #### Run sentimental analysis on "Review" and return compund value
+# #### Run sentimental analysis on "Review" and return compound value
 
 # In[14]:
 
@@ -164,7 +164,7 @@ def sc(x):
     return score['compound']
 
 
-# #### Create a new column "SentScor" to store the compound score of the sentimental analysis above 
+# #### Create a new column "SentScore" to store the compound score of the sentimental analysis above 
 
 # In[15]:
 
@@ -179,7 +179,7 @@ df.head()
 
 
 # ### 3.2 SentClass
-# #### Run sentimental analysis on "Review" and return compund value
+# #### Run sentimental analysis on "Review" and return compound value
 
 # In[17]:
 
@@ -212,7 +212,7 @@ df["SentClass"]=df["SentScore"].map(sca)
 df.head(15)
 
 
-# ### 3.3 Sentiment
+# ### 3.3 Sentiment_bin
 # #### Define a function for "sentiment" column, postive = 1 and nagative = 0
 
 # In[20]:
@@ -375,11 +375,6 @@ corpus2.head()
 
 # In[37]:
 
-
-# We have 1000 documents (rows) which is consistent with the selected amount of rows of our list corpus 
-# and 110012 columns which is humangous. We have a created a giant matrix
-
-# It is noticeable that many features contain 0, since not all words willbe present across documents of the corpus(2)
 
 corpus2.shape
 
