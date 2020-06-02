@@ -5,5 +5,5 @@ Topic: IMDB Movie Rating
 
 There are 3 documents:
 1. Report in pdf format
-2. Code
+2. Code in ipynb format
 3. Code in html format with result
